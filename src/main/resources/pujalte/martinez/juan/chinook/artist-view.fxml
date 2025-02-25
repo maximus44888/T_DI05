@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.ListView?><?import javafx.scene.layout.VBox?><?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="pujalte.martinez.juan.chinook.ArtistController">
+    <ListView fx:id="listView" prefHeight="200.0" prefWidth="200.0" />
+    <Button fx:id="generateReport" text="Generar canciones del artista" onAction="#onArtistTrack"/>
+</VBox>

@@ -3,7 +3,7 @@
 <?import javafx.scene.control.Button?><?import javafx.scene.layout.VBox?>
 <VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
     fx:controller="pujalte.martinez.juan.chinook.ChinookController">
-    <Button text="Cerrar" onAction="#onClose" />
+    <Button fx:id="close" text="Cerrar" onAction="#onClose" />
     <Button text="Clientes" onAction="#onClients" />
     <Button text="Canciones de..." onAction="#onArtist" />
 </VBox>
