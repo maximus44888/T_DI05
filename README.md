@@ -12,9 +12,11 @@ Reporte clientes
 Selección artista
 
 ![image](https://github.com/user-attachments/assets/68e07fbf-f0cd-4957-a341-5e2539f1200c)
+
 AC/DC
 
 ![image](https://github.com/user-attachments/assets/2a60d781-4766-498f-ba10-e6a17b393997)
+
 Audioslave
 
 ![image](https://github.com/user-attachments/assets/53173b53-fbc8-4397-9b7a-e4db8e4bbf1f)
