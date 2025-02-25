@@ -1,24 +1,15 @@
 package pujalte.martinez.juan.chinook;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 
 import java.util.Map;
 
 public class ChinookController {
-    @FXML
-    private Label welcomeText;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    protected void onArtist() {
         try {
-            Utils.viewReport(
-                    getClass().getResourceAsStream("Clients.jrxml"),
-                    "jdbc:sqlite:chinook.db",
-                    null,
-                    false
-            );
             Utils.viewReport(
                     getClass().getResourceAsStream("Artist_tracks_per_album.jrxml"),
                     "jdbc:sqlite:chinook.db",
@@ -26,7 +17,27 @@ public class ChinookController {
                     false
             );
         } catch (final Exception e) {
-            e.printStackTrace();
+            System.err.println("Error: " + e.getLocalizedMessage());
         }
+    }
+
+    @FXML
+    protected void onClients() {
+        try {
+            Utils.viewReport(
+                    getClass().getResourceAsStream("Clients.jrxml"),
+                    "jdbc:sqlite:chinook.db",
+                    null,
+                    false
+            );
+        } catch (final Exception e) {
+            System.err.println("Error: " + e.getLocalizedMessage());
+        }
+    }
+
+    @FXML
+    protected void onClose() {
+        Platform.exit();
+        System.exit(0);
     }
 }

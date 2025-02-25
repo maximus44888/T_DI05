@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?><?import javafx.scene.control.Button?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="pujalte.martinez.juan.chinook.ChinookController">
+    <Button text="Cerrar" onAction="#onClose" />
+    <Button text="Clientes" onAction="#onClients" />
+    <Button text="Canciones de..." onAction="#onArtist" />
+</VBox>
