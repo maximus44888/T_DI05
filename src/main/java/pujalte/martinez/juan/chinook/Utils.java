@@ -1,6 +1,7 @@
 package pujalte.martinez.juan.chinook;
 
 import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.view.JasperViewer;
 
@@ -18,7 +19,11 @@ public class Utils {
             final boolean isExitOnClose
     ) throws SQLException, JRException {
         final var connection = DriverManager.getConnection(database);
-        final var jasperPrint = JasperFillManager.fillReport(jrxml, parameters != null ? new HashMap<>(parameters) : null, connection);
+        final var jasperPrint = JasperFillManager.fillReport(
+                JasperCompileManager.compileReport(jrxml),
+                parameters != null ? new HashMap<>(parameters) : null,
+                connection
+        );
         JasperViewer.viewReport(jasperPrint, isExitOnClose);
     }
 }

@@ -75,7 +75,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>pujalte.martinez.juan.chinook/pujalte.martinez.juan.chinook.HelloApplication
+                            <mainClass>pujalte.martinez.juan.chinook/pujalte.martinez.juan.chinook.ChinookApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

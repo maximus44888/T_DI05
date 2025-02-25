@@ -8,7 +8,7 @@ import org.apache.log4j.BasicConfigurator;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class ChinookApplication extends Application {
     public static void main(final String[] args) {
         BasicConfigurator.configure();
         launch();
@@ -16,7 +16,7 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(final Stage stage) throws IOException {
-        final var fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        final var fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
         final var scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Hello!");
         stage.setScene(scene);
