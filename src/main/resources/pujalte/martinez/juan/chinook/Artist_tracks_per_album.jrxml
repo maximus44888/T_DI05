@@ -278,7 +278,7 @@ WHERE
 				<textElement verticalAlignment="Top">
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[Reporte clientes Chinook]]></text>
+				<text><![CDATA[Canciones del artista]]></text>
 			</staticText>
 		</band>
 	</pageFooter>
