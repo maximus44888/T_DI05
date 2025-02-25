@@ -37,7 +37,7 @@ public class ChinookController {
                     null,
                     false
             );
-        } catch (final JRException e) {
+        } catch (final Exception e) {
             System.err.println("Error: " + e.getLocalizedMessage());
         }
     }

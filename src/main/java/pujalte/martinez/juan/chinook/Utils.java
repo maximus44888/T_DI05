@@ -21,7 +21,7 @@ public class Utils {
         connection = () -> {
             try {
                 return DriverManager.getConnection("jdbc:sqlite:chinook.db");
-            } catch (final SQLException e) {
+            } catch (final Exception e) {
                 throw new RuntimeException(e);
             }
         };

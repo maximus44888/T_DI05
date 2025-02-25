@@ -29,8 +29,8 @@ public class ArtistController {
             while (resultSet.next()) {
                 artists.add(new Artist(resultSet.getInt("ArtistId"), resultSet.getString("Name")));
             }
-        } catch (final SQLException e) {
-            throw new RuntimeException(e);
+        } catch (final Exception e) {
+            System.err.println("Error: " + e.getLocalizedMessage());
         }
         return artists;
     }
