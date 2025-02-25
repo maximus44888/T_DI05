@@ -18,7 +18,7 @@ public class ChinookApplication extends Application {
     public void start(final Stage stage) throws IOException {
         final var fxmlLoader = new FXMLLoader(getClass().getResource("chinook-view.fxml"));
         final var scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
+        stage.setTitle("Chinook Report");
         stage.setScene(scene);
         stage.show();
     }

@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?><?import javafx.scene.layout.VBox?>
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-    fx:controller="pujalte.martinez.juan.chinook.ChinookController">
-    <Button fx:id="close" text="Cerrar" onAction="#onClose" />
-    <Button text="Clientes" onAction="#onClients" />
-    <Button text="Canciones de..." onAction="#onArtist" />
+<?import javafx.scene.control.Button?><?import javafx.scene.control.Separator?><?import javafx.scene.image.Image?><?import javafx.scene.image.ImageView?><?import javafx.scene.layout.HBox?><?import javafx.scene.layout.VBox?><?import javafx.scene.text.Text?>
+<VBox alignment="CENTER" stylesheets="@style.css" styleClass="spacing-padding" xmlns="http://javafx.com/javafx/17.0.12"
+    xmlns:fx="http://javafx.com/fxml/1" fx:controller="pujalte.martinez.juan.chinook.ChinookController">
+    <HBox alignment="CENTER" styleClass="spacing-padding">
+        <ImageView fitHeight="75.0" fitWidth="75.0" preserveRatio="true">
+            <Image url="@../../../../logo.jpg" />
+        </ImageView>
+        <Text styleClass="film-view-title" text="Chinook" />
+    </HBox>
+    <Separator />
+    <Text styleClass="film-view-title" text="Generar reportes" />
+    <HBox styleClass="spacing-padding">
+        <Button onAction="#onClients" text="Clientes" />
+        <Button onAction="#onArtist" text="Canciones de ..." />
+    </HBox>
+    <Separator />
+    <Button fx:id="close" onAction="#onClose" text="Cerrar" />
 </VBox>
